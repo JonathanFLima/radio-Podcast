@@ -42,10 +42,13 @@ function renderPodcast(podcast) {
   img.src = './img/' + podcast.img;
   img.alt = 'Podcast ' + podcast.title;
   img.title = 'Podcast ' + podcast.title;
+  img.onclick = () => {
+    window.open(podcast.link);
+  };
+  img.style = `cursor: pointer`;
 
   let title = document.createElement('h2');
-  title.innerHTML =
-    '<a href="' + podcast.link + '" target=_blank>' + podcast.title + '</a>';
+  title.textContent = podcast.title;
 
   let description = document.createElement('p');
   description.textContent = podcast.description;
