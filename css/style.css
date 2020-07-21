@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+  border: 1px solid grey;
+}
+
+#inputCurrentFrequency {
+  width: 80px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#rangeFrequencies {
+  width: 300px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+h2 {
+  text-decoration: none !important;
+}
